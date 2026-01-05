@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+alembic
+psycopg2-binary
+asyncpg
+python-multipart
+python-jose[cryptography]
+passlib[bcrypt]
+stripe
+celery[redis]
+weasyprint
+emails
+jinja2
+python-dotenv
+email-validator
+aiosqlite
