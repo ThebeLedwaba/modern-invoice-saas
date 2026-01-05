@@ -531,3 +531,652 @@ WHERE users.id = ?
 2025-12-19 00:19:40,128 - aiosqlite - DEBUG - _connection_worker_thread:64 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000023C296B0D60>)
 2025-12-19 00:19:40,129 - aiosqlite - DEBUG - _connection_worker_thread:66 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000023C296B0D60>) completed
 2025-12-19 00:20:07,923 - main - INFO - lifespan:19 - Shutting down application
+2026-01-05 22:02:22,807 - main - INFO - <module>:30 - Configuring CORS with origins: ['http://localhost:5173', 'http://localhost:3000']
+2026-01-05 22:02:22,872 - main - INFO - lifespan:15 - Starting application initialization
+2026-01-05 22:02:22,874 - aiosqlite - DEBUG - run:104 - executing <function connect.<locals>.connector at 0x0000012EDF091580>
+2026-01-05 22:02:22,878 - aiosqlite - DEBUG - run:106 - operation <function connect.<locals>.connector at 0x0000012EDF091580> completed
+2026-01-05 22:02:22,879 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1A50A90>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000012EE16A99E0>, deterministic=True)
+2026-01-05 22:02:22,880 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1A50A90>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000012EE16A99E0>, deterministic=True) completed
+2026-01-05 22:02:22,880 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1A50A90>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-01-05 22:02:22,881 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1A50A90>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-01-05 22:02:22,881 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:02:22,882 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:02:22,882 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A39840>, 'PRAGMA read_uncommitted', [])
+2026-01-05 22:02:22,886 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A39840>, 'PRAGMA read_uncommitted', []) completed
+2026-01-05 22:02:22,887 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A39840>)
+2026-01-05 22:02:22,887 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A39840>) completed
+2026-01-05 22:02:22,887 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A39840>)
+2026-01-05 22:02:22,887 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A39840>) completed
+2026-01-05 22:02:22,888 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:02:22,888 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:02:22,889 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:02:22,890 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - PRAGMA main.table_info("users")
+2026-01-05 22:02:22,891 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [raw sql] ()
+2026-01-05 22:02:22,892 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:02:22,892 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:02:22,892 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A39E40>, 'PRAGMA main.table_info("users")', ())
+2026-01-05 22:02:22,897 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A39E40>, 'PRAGMA main.table_info("users")', ()) completed
+2026-01-05 22:02:22,898 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A39E40>)
+2026-01-05 22:02:22,898 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A39E40>) completed
+2026-01-05 22:02:22,899 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A39E40>)
+2026-01-05 22:02:22,899 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A39E40>) completed
+2026-01-05 22:02:22,900 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - PRAGMA main.table_info("clients")
+2026-01-05 22:02:22,902 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [raw sql] ()
+2026-01-05 22:02:22,903 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:02:22,903 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:02:22,904 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A3A140>, 'PRAGMA main.table_info("clients")', ())
+2026-01-05 22:02:22,904 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A3A140>, 'PRAGMA main.table_info("clients")', ()) completed
+2026-01-05 22:02:22,905 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A3A140>)
+2026-01-05 22:02:22,905 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A3A140>) completed
+2026-01-05 22:02:22,905 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A3A140>)
+2026-01-05 22:02:22,906 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A3A140>) completed
+2026-01-05 22:02:22,906 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - PRAGMA main.table_info("invoices")
+2026-01-05 22:02:22,908 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [raw sql] ()
+2026-01-05 22:02:22,910 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:02:22,910 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:02:22,910 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A3A4C0>, 'PRAGMA main.table_info("invoices")', ())
+2026-01-05 22:02:22,911 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A3A4C0>, 'PRAGMA main.table_info("invoices")', ()) completed
+2026-01-05 22:02:22,911 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A3A4C0>)
+2026-01-05 22:02:22,911 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A3A4C0>) completed
+2026-01-05 22:02:22,911 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A3A4C0>)
+2026-01-05 22:02:22,911 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A3A4C0>) completed
+2026-01-05 22:02:22,912 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - PRAGMA main.table_info("invoice_items")
+2026-01-05 22:02:22,915 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [raw sql] ()
+2026-01-05 22:02:22,916 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:02:22,916 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:02:22,916 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A3A840>, 'PRAGMA main.table_info("invoice_items")', ())
+2026-01-05 22:02:22,917 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A3A840>, 'PRAGMA main.table_info("invoice_items")', ()) completed
+2026-01-05 22:02:22,917 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A3A840>)
+2026-01-05 22:02:22,918 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A3A840>) completed
+2026-01-05 22:02:22,918 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A3A840>)
+2026-01-05 22:02:22,918 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A3A840>) completed
+2026-01-05 22:02:22,919 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - PRAGMA main.table_info("payments")
+2026-01-05 22:02:22,920 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [raw sql] ()
+2026-01-05 22:02:22,921 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:02:22,921 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:02:22,921 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A3ABC0>, 'PRAGMA main.table_info("payments")', ())
+2026-01-05 22:02:22,922 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A3ABC0>, 'PRAGMA main.table_info("payments")', ()) completed
+2026-01-05 22:02:22,923 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A3ABC0>)
+2026-01-05 22:02:22,923 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A3ABC0>) completed
+2026-01-05 22:02:22,924 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A3ABC0>)
+2026-01-05 22:02:22,924 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A3ABC0>) completed
+2026-01-05 22:02:22,926 - sqlalchemy.engine.Engine - INFO - _connection_commit_impl:2708 - COMMIT
+2026-01-05 22:02:22,928 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:02:22,928 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:02:22,929 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:02:22,930 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:02:22,930 - main - INFO - lifespan:17 - Database initialized successfully
+2026-01-05 22:03:03,943 - uvicorn.access - INFO - send:476 - 127.0.0.1:54696 - "OPTIONS /api/auth/me HTTP/1.1" 200
+2026-01-05 22:03:03,944 - uvicorn.access - INFO - send:476 - 127.0.0.1:54697 - "OPTIONS /api/auth/me HTTP/1.1" 200
+2026-01-05 22:03:04,009 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:04,036 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:04,043 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [generated in 0.00859s] (2,)
+2026-01-05 22:03:04,044 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:04,044 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:04,045 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A928C0>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:04,046 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A928C0>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:04,046 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A928C0>)
+2026-01-05 22:03:04,046 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A928C0>) completed
+2026-01-05 22:03:04,046 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A928C0>)
+2026-01-05 22:03:04,047 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A928C0>) completed
+2026-01-05 22:03:04,070 - uvicorn.access - INFO - send:476 - 127.0.0.1:54697 - "GET /api/auth/me HTTP/1.1" 200
+2026-01-05 22:03:04,073 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:04,075 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:04,078 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:04,079 - aiosqlite - DEBUG - run:104 - executing <function connect.<locals>.connector at 0x0000012EE1C0B880>
+2026-01-05 22:03:04,079 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:04,079 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:04,079 - aiosqlite - DEBUG - run:106 - operation <function connect.<locals>.connector at 0x0000012EE1C0B880> completed
+2026-01-05 22:03:04,080 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1C0CC70>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000012EE16A99E0>, deterministic=True)
+2026-01-05 22:03:04,080 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1C0CC70>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000012EE16A99E0>, deterministic=True) completed
+2026-01-05 22:03:04,081 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1C0CC70>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-01-05 22:03:04,081 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1C0CC70>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-01-05 22:03:04,081 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:04,082 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:04,094 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 0.06093s ago] (2,)
+2026-01-05 22:03:04,099 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:04,099 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:04,103 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A3B6C0>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:04,104 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A3B6C0>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:04,105 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A3B6C0>)
+2026-01-05 22:03:04,105 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A3B6C0>) completed
+2026-01-05 22:03:04,106 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A3B6C0>)
+2026-01-05 22:03:04,106 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A3B6C0>) completed
+2026-01-05 22:03:04,108 - uvicorn.access - INFO - send:476 - 127.0.0.1:54696 - "GET /api/auth/me HTTP/1.1" 200
+2026-01-05 22:03:04,111 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:04,114 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:04,114 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:04,115 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:04,115 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:12,666 - uvicorn.access - INFO - send:476 - 127.0.0.1:54699 - "OPTIONS /api/clients/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:12,678 - uvicorn.access - INFO - send:476 - 127.0.0.1:54699 - "OPTIONS /api/clients/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:12,688 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:12,693 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:12,698 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 8.665s ago] (2,)
+2026-01-05 22:03:12,701 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:12,701 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:12,701 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1AEB3C0>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:12,702 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1AEB3C0>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:12,702 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1AEB3C0>)
+2026-01-05 22:03:12,702 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1AEB3C0>) completed
+2026-01-05 22:03:12,703 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1AEB3C0>)
+2026-01-05 22:03:12,703 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1AEB3C0>) completed
+2026-01-05 22:03:12,710 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at 
+FROM clients 
+WHERE clients.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:12,723 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [generated in 0.01307s] (2, 100, 0)
+2026-01-05 22:03:12,727 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:12,728 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:12,728 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A3BB40>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:12,730 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A3BB40>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:12,730 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A3BB40>)
+2026-01-05 22:03:12,731 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A3BB40>) completed
+2026-01-05 22:03:12,732 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A3BB40>)
+2026-01-05 22:03:12,732 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A3BB40>) completed
+2026-01-05 22:03:12,734 - uvicorn.access - INFO - send:476 - 127.0.0.1:54699 - "GET /api/clients/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:12,741 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:12,746 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:12,754 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:12,748 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:12,765 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:12,777 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 8.744s ago] (2,)
+2026-01-05 22:03:12,779 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:12,780 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:12,780 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:12,782 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:12,782 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1AC95C0>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:12,783 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1AC95C0>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:12,783 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1AC95C0>)
+2026-01-05 22:03:12,784 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1AC95C0>) completed
+2026-01-05 22:03:12,784 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1AC95C0>)
+2026-01-05 22:03:12,784 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1AC95C0>) completed
+2026-01-05 22:03:12,786 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at 
+FROM clients 
+WHERE clients.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:12,796 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 0.08575s ago] (2, 100, 0)
+2026-01-05 22:03:12,800 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:12,800 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:12,800 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1AC95C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:12,801 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1AC95C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:12,801 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1AC95C0>)
+2026-01-05 22:03:12,801 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1AC95C0>) completed
+2026-01-05 22:03:12,802 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1AC95C0>)
+2026-01-05 22:03:12,802 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1AC95C0>) completed
+2026-01-05 22:03:12,803 - uvicorn.access - INFO - send:476 - 127.0.0.1:54699 - "GET /api/clients/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:12,805 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:12,810 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:12,810 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:12,810 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:12,811 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:14,976 - uvicorn.access - INFO - send:476 - 127.0.0.1:54699 - "OPTIONS /api/invoices/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:15,016 - uvicorn.access - INFO - send:476 - 127.0.0.1:54712 - "OPTIONS /api/invoices/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:15,068 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:15,071 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:15,073 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 11.04s ago] (2,)
+2026-01-05 22:03:15,076 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:15,076 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:15,075 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:15,077 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:15,079 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 11.05s ago] (2,)
+2026-01-05 22:03:15,085 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:15,085 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:15,086 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C1A6C0>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:15,086 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1AEAC40>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:15,086 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C1A6C0>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:15,087 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1AEAC40>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:15,087 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C1A6C0>)
+2026-01-05 22:03:15,087 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1AEAC40>)
+2026-01-05 22:03:15,087 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C1A6C0>) completed
+2026-01-05 22:03:15,088 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1AEAC40>) completed
+2026-01-05 22:03:15,088 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1AEAC40>)
+2026-01-05 22:03:15,088 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C1A6C0>)
+2026-01-05 22:03:15,089 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1AEAC40>) completed
+2026-01-05 22:03:15,089 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C1A6C0>) completed
+2026-01-05 22:03:15,091 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at 
+FROM clients 
+WHERE clients.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:15,095 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 2.384s ago] (2, 100, 0)
+2026-01-05 22:03:15,104 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:15,104 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:15,104 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT invoices.id, invoices.user_id, invoices.client_id, invoices.invoice_number, invoices.status, invoices.issue_date, invoices.due_date, invoices.subtotal, invoices.tax_rate, invoices.tax_amount, invoices.discount_amount, invoices.total, invoices.notes, invoices.terms, invoices.created_at, invoices.updated_at 
+FROM invoices 
+WHERE invoices.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:15,109 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [generated in 0.00504s] (2, 100, 0)
+2026-01-05 22:03:15,110 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:15,110 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:15,111 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C19640>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:15,111 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C1BA40>, 'SELECT invoices.id, invoices.user_id, invoices.client_id, invoices.invoice_number, invoices.status, invoices.issue_date, invoices.due_date, invoices.subtotal, invoices.tax_rate, invoices.tax_amount, invoices.discount_amount, invoices.total, invoices.notes, invoices.terms, invoices.created_at, invoices.updated_at \nFROM invoices \nWHERE invoices.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:15,111 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C19640>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:15,112 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C19640>)
+2026-01-05 22:03:15,112 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C1BA40>, 'SELECT invoices.id, invoices.user_id, invoices.client_id, invoices.invoice_number, invoices.status, invoices.issue_date, invoices.due_date, invoices.subtotal, invoices.tax_rate, invoices.tax_amount, invoices.discount_amount, invoices.total, invoices.notes, invoices.terms, invoices.created_at, invoices.updated_at \nFROM invoices \nWHERE invoices.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:15,112 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C19640>) completed
+2026-01-05 22:03:15,113 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C1BA40>)
+2026-01-05 22:03:15,113 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C1BA40>) completed
+2026-01-05 22:03:15,113 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C19640>)
+2026-01-05 22:03:15,115 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C19640>) completed
+2026-01-05 22:03:15,117 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C1BA40>)
+2026-01-05 22:03:15,117 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C1BA40>) completed
+2026-01-05 22:03:15,117 - uvicorn.access - INFO - send:476 - 127.0.0.1:54713 - "GET /api/clients/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:15,118 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:15,137 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:15,138 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:15,138 - uvicorn.access - INFO - send:476 - 127.0.0.1:54699 - "GET /api/invoices/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:15,139 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:15,144 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:15,144 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:15,144 - aiosqlite - DEBUG - run:104 - executing <function connect.<locals>.connector at 0x0000012EE1C26D40>
+2026-01-05 22:03:15,145 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:15,147 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:15,151 - aiosqlite - DEBUG - run:106 - operation <function connect.<locals>.connector at 0x0000012EE1C26D40> completed
+2026-01-05 22:03:15,153 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:15,154 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1C0F790>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000012EE16A99E0>, deterministic=True)
+2026-01-05 22:03:15,154 - aiosqlite - DEBUG - run:104 - executing <function connect.<locals>.connector at 0x0000012EE1C27880>
+2026-01-05 22:03:15,154 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:15,155 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1C0F790>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000012EE16A99E0>, deterministic=True) completed
+2026-01-05 22:03:15,155 - aiosqlite - DEBUG - run:106 - operation <function connect.<locals>.connector at 0x0000012EE1C27880> completed
+2026-01-05 22:03:15,156 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1C0F790>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-01-05 22:03:15,157 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1C0F790>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-01-05 22:03:15,157 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1A535B0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000012EE16A99E0>, deterministic=True)
+2026-01-05 22:03:15,157 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1A535B0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000012EE16A99E0>, deterministic=True) completed
+2026-01-05 22:03:15,157 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:15,159 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:15,160 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 11.13s ago] (2,)
+2026-01-05 22:03:15,161 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0F790>)
+2026-01-05 22:03:15,161 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0F790>) completed
+2026-01-05 22:03:15,162 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1A535B0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-01-05 22:03:15,162 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000012EE1A535B0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-01-05 22:03:15,162 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C19A40>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:15,163 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C19A40>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:15,162 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:15,167 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:15,170 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 11.14s ago] (2,)
+2026-01-05 22:03:15,174 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A535B0>)
+2026-01-05 22:03:15,175 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C19A40>)
+2026-01-05 22:03:15,175 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C19A40>) completed
+2026-01-05 22:03:15,176 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C19A40>)
+2026-01-05 22:03:15,176 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C19A40>) completed
+2026-01-05 22:03:15,175 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A535B0>) completed
+2026-01-05 22:03:15,177 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at 
+FROM clients 
+WHERE clients.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:15,182 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 2.472s ago] (2, 100, 0)
+2026-01-05 22:03:15,184 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0F790>)
+2026-01-05 22:03:15,184 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C40B40>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:15,184 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0F790>) completed
+2026-01-05 22:03:15,185 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C19E40>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:15,185 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C40B40>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:15,185 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C19E40>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:15,186 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C40B40>)
+2026-01-05 22:03:15,186 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C19E40>)
+2026-01-05 22:03:15,186 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C40B40>) completed
+2026-01-05 22:03:15,186 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C19E40>) completed
+2026-01-05 22:03:15,186 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C40B40>)
+2026-01-05 22:03:15,187 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C40B40>) completed
+2026-01-05 22:03:15,187 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C19E40>)
+2026-01-05 22:03:15,190 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C19E40>) completed
+2026-01-05 22:03:15,189 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT invoices.id, invoices.user_id, invoices.client_id, invoices.invoice_number, invoices.status, invoices.issue_date, invoices.due_date, invoices.subtotal, invoices.tax_rate, invoices.tax_amount, invoices.discount_amount, invoices.total, invoices.notes, invoices.terms, invoices.created_at, invoices.updated_at 
+FROM invoices 
+WHERE invoices.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:15,193 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 0.08953s ago] (2, 100, 0)
+2026-01-05 22:03:15,194 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A535B0>)
+2026-01-05 22:03:15,195 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A535B0>) completed
+2026-01-05 22:03:15,195 - uvicorn.access - INFO - send:476 - 127.0.0.1:54712 - "GET /api/clients/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:15,196 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:15,203 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0F790>)
+2026-01-05 22:03:15,203 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C19340>, 'SELECT invoices.id, invoices.user_id, invoices.client_id, invoices.invoice_number, invoices.status, invoices.issue_date, invoices.due_date, invoices.subtotal, invoices.tax_rate, invoices.tax_amount, invoices.discount_amount, invoices.total, invoices.notes, invoices.terms, invoices.created_at, invoices.updated_at \nFROM invoices \nWHERE invoices.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:15,203 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0F790>) completed
+2026-01-05 22:03:15,204 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0F790>)
+2026-01-05 22:03:15,204 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0F790>) completed
+2026-01-05 22:03:15,204 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C19340>, 'SELECT invoices.id, invoices.user_id, invoices.client_id, invoices.invoice_number, invoices.status, invoices.issue_date, invoices.due_date, invoices.subtotal, invoices.tax_rate, invoices.tax_amount, invoices.discount_amount, invoices.total, invoices.notes, invoices.terms, invoices.created_at, invoices.updated_at \nFROM invoices \nWHERE invoices.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:15,205 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C19340>)
+2026-01-05 22:03:15,205 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C19340>) completed
+2026-01-05 22:03:15,205 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C19340>)
+2026-01-05 22:03:15,206 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C19340>) completed
+2026-01-05 22:03:15,206 - uvicorn.access - INFO - send:476 - 127.0.0.1:54713 - "GET /api/invoices/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:15,209 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:15,211 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A535B0>)
+2026-01-05 22:03:15,212 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A535B0>) completed
+2026-01-05 22:03:15,212 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A535B0>)
+2026-01-05 22:03:15,212 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A535B0>) completed
+2026-01-05 22:03:18,179 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:18,184 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:18,190 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 14.16s ago] (2,)
+2026-01-05 22:03:18,193 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:18,193 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:18,193 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C18D40>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:18,194 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C18D40>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:18,194 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C18D40>)
+2026-01-05 22:03:18,194 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C18D40>) completed
+2026-01-05 22:03:18,195 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C18D40>)
+2026-01-05 22:03:18,195 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C18D40>) completed
+2026-01-05 22:03:18,197 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at 
+FROM clients 
+WHERE clients.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:18,205 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 5.495s ago] (2, 100, 0)
+2026-01-05 22:03:18,208 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:18,208 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:18,208 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C193C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:18,209 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C193C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:18,209 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C193C0>)
+2026-01-05 22:03:18,209 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C193C0>) completed
+2026-01-05 22:03:18,209 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C193C0>)
+2026-01-05 22:03:18,210 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C193C0>) completed
+2026-01-05 22:03:18,210 - uvicorn.access - INFO - send:476 - 127.0.0.1:54713 - "GET /api/clients/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:18,211 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:18,215 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:18,215 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:18,218 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:18,223 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:18,226 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 14.19s ago] (2,)
+2026-01-05 22:03:18,227 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:18,227 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:18,228 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:18,228 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:18,228 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C19CC0>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:18,228 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C19CC0>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:18,229 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C19CC0>)
+2026-01-05 22:03:18,229 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C19CC0>) completed
+2026-01-05 22:03:18,230 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C19CC0>)
+2026-01-05 22:03:18,230 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C19CC0>) completed
+2026-01-05 22:03:18,233 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at 
+FROM clients 
+WHERE clients.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:18,241 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 5.531s ago] (2, 100, 0)
+2026-01-05 22:03:18,242 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:18,242 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:18,242 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C193C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:18,243 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C193C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:18,243 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C193C0>)
+2026-01-05 22:03:18,243 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C193C0>) completed
+2026-01-05 22:03:18,243 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C193C0>)
+2026-01-05 22:03:18,243 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C193C0>) completed
+2026-01-05 22:03:18,244 - uvicorn.access - INFO - send:476 - 127.0.0.1:54712 - "GET /api/clients/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:18,245 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:18,249 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:18,249 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:18,250 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:18,252 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:31,847 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:31,849 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:31,851 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 27.82s ago] (2,)
+2026-01-05 22:03:31,852 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0F790>)
+2026-01-05 22:03:31,852 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0F790>) completed
+2026-01-05 22:03:31,853 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1AEAC40>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:31,853 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1AEAC40>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:31,853 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1AEAC40>)
+2026-01-05 22:03:31,853 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1AEAC40>) completed
+2026-01-05 22:03:31,854 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1AEAC40>)
+2026-01-05 22:03:31,854 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1AEAC40>) completed
+2026-01-05 22:03:31,855 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at 
+FROM clients 
+WHERE clients.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:31,857 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 19.15s ago] (2, 100, 0)
+2026-01-05 22:03:31,861 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0F790>)
+2026-01-05 22:03:31,861 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0F790>) completed
+2026-01-05 22:03:31,861 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A3B4C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:31,862 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A3B4C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:31,863 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A3B4C0>)
+2026-01-05 22:03:31,863 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A3B4C0>) completed
+2026-01-05 22:03:31,863 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A3B4C0>)
+2026-01-05 22:03:31,863 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A3B4C0>) completed
+2026-01-05 22:03:31,864 - uvicorn.access - INFO - send:476 - 127.0.0.1:54718 - "GET /api/clients/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:31,866 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:31,869 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0F790>)
+2026-01-05 22:03:31,872 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0F790>) completed
+2026-01-05 22:03:31,871 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:31,873 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:31,878 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 27.85s ago] (2,)
+2026-01-05 22:03:31,881 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A535B0>)
+2026-01-05 22:03:31,882 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A535B0>) completed
+2026-01-05 22:03:31,882 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0F790>)
+2026-01-05 22:03:31,882 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0F790>) completed
+2026-01-05 22:03:31,883 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C1A140>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:31,884 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C1A140>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:31,885 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C1A140>)
+2026-01-05 22:03:31,886 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C1A140>) completed
+2026-01-05 22:03:31,886 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C1A140>)
+2026-01-05 22:03:31,887 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C1A140>) completed
+2026-01-05 22:03:31,888 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at 
+FROM clients 
+WHERE clients.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:31,890 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 19.18s ago] (2, 100, 0)
+2026-01-05 22:03:31,891 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A535B0>)
+2026-01-05 22:03:31,891 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A535B0>) completed
+2026-01-05 22:03:31,891 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1AC96C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:31,893 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1AC96C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:31,894 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1AC96C0>)
+2026-01-05 22:03:31,894 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1AC96C0>) completed
+2026-01-05 22:03:31,895 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1AC96C0>)
+2026-01-05 22:03:31,895 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1AC96C0>) completed
+2026-01-05 22:03:31,896 - uvicorn.access - INFO - send:476 - 127.0.0.1:54718 - "GET /api/clients/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:31,897 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:31,901 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A535B0>)
+2026-01-05 22:03:31,901 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A535B0>) completed
+2026-01-05 22:03:31,902 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A535B0>)
+2026-01-05 22:03:31,902 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A535B0>) completed
+2026-01-05 22:03:33,832 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:33,837 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:33,840 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 29.81s ago] (2,)
+2026-01-05 22:03:33,848 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:33,849 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:33,848 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:33,851 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:33,855 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 29.82s ago] (2,)
+2026-01-05 22:03:33,857 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:33,859 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C40840>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:33,859 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:33,860 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C40840>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:33,861 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C40840>)
+2026-01-05 22:03:33,862 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C40340>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:33,863 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C40840>) completed
+2026-01-05 22:03:33,863 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C40340>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:33,865 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C40840>)
+2026-01-05 22:03:33,865 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C40340>)
+2026-01-05 22:03:33,865 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C40840>) completed
+2026-01-05 22:03:33,865 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C40340>) completed
+2026-01-05 22:03:33,867 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT invoices.id, invoices.user_id, invoices.client_id, invoices.invoice_number, invoices.status, invoices.issue_date, invoices.due_date, invoices.subtotal, invoices.tax_rate, invoices.tax_amount, invoices.discount_amount, invoices.total, invoices.notes, invoices.terms, invoices.created_at, invoices.updated_at 
+FROM invoices 
+WHERE invoices.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:33,870 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 18.77s ago] (2, 100, 0)
+2026-01-05 22:03:33,871 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:33,871 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:33,871 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C40340>)
+2026-01-05 22:03:33,871 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C40340>) completed
+2026-01-05 22:03:33,871 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1AEBEC0>, 'SELECT invoices.id, invoices.user_id, invoices.client_id, invoices.invoice_number, invoices.status, invoices.issue_date, invoices.due_date, invoices.subtotal, invoices.tax_rate, invoices.tax_amount, invoices.discount_amount, invoices.total, invoices.notes, invoices.terms, invoices.created_at, invoices.updated_at \nFROM invoices \nWHERE invoices.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:33,873 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1AEBEC0>, 'SELECT invoices.id, invoices.user_id, invoices.client_id, invoices.invoice_number, invoices.status, invoices.issue_date, invoices.due_date, invoices.subtotal, invoices.tax_rate, invoices.tax_amount, invoices.discount_amount, invoices.total, invoices.notes, invoices.terms, invoices.created_at, invoices.updated_at \nFROM invoices \nWHERE invoices.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:33,873 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at 
+FROM clients 
+WHERE clients.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:33,882 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 21.17s ago] (2, 100, 0)
+2026-01-05 22:03:33,883 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:33,883 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:33,883 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1AEBEC0>)
+2026-01-05 22:03:33,883 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1AEBEC0>) completed
+2026-01-05 22:03:33,884 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C1A9C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:33,884 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1AEBEC0>)
+2026-01-05 22:03:33,884 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1AEBEC0>) completed
+2026-01-05 22:03:33,884 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C1A9C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:33,885 - uvicorn.access - INFO - send:476 - 127.0.0.1:54718 - "GET /api/invoices/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:33,886 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C1A9C0>)
+2026-01-05 22:03:33,886 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C1A9C0>) completed
+2026-01-05 22:03:33,886 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:33,888 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:33,890 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C1A9C0>)
+2026-01-05 22:03:33,890 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:33,890 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C1A9C0>) completed
+2026-01-05 22:03:33,890 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:33,892 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:33,901 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 29.87s ago] (2,)
+2026-01-05 22:03:33,902 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0F790>)
+2026-01-05 22:03:33,903 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0F790>) completed
+2026-01-05 22:03:33,904 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:33,904 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:33,903 - uvicorn.access - INFO - send:476 - 127.0.0.1:54721 - "GET /api/clients/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:33,904 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:33,907 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:33,907 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C41240>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:33,910 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:33,911 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C41240>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:33,910 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:33,916 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:33,918 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 29.89s ago] (2,)
+2026-01-05 22:03:33,920 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A535B0>)
+2026-01-05 22:03:33,920 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A535B0>) completed
+2026-01-05 22:03:33,920 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C41240>)
+2026-01-05 22:03:33,920 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:33,921 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:33,921 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A928C0>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:33,921 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C41240>) completed
+2026-01-05 22:03:33,922 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C41240>)
+2026-01-05 22:03:33,922 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A928C0>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:33,922 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C41240>) completed
+2026-01-05 22:03:33,923 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A928C0>)
+2026-01-05 22:03:33,924 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A928C0>) completed
+2026-01-05 22:03:33,924 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT invoices.id, invoices.user_id, invoices.client_id, invoices.invoice_number, invoices.status, invoices.issue_date, invoices.due_date, invoices.subtotal, invoices.tax_rate, invoices.tax_amount, invoices.discount_amount, invoices.total, invoices.notes, invoices.terms, invoices.created_at, invoices.updated_at 
+FROM invoices 
+WHERE invoices.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:33,931 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 18.83s ago] (2, 100, 0)
+2026-01-05 22:03:33,933 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0F790>)
+2026-01-05 22:03:33,933 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0F790>) completed
+2026-01-05 22:03:33,933 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A928C0>)
+2026-01-05 22:03:33,934 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C193C0>, 'SELECT invoices.id, invoices.user_id, invoices.client_id, invoices.invoice_number, invoices.status, invoices.issue_date, invoices.due_date, invoices.subtotal, invoices.tax_rate, invoices.tax_amount, invoices.discount_amount, invoices.total, invoices.notes, invoices.terms, invoices.created_at, invoices.updated_at \nFROM invoices \nWHERE invoices.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:33,934 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A928C0>) completed
+2026-01-05 22:03:33,936 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C193C0>, 'SELECT invoices.id, invoices.user_id, invoices.client_id, invoices.invoice_number, invoices.status, invoices.issue_date, invoices.due_date, invoices.subtotal, invoices.tax_rate, invoices.tax_amount, invoices.discount_amount, invoices.total, invoices.notes, invoices.terms, invoices.created_at, invoices.updated_at \nFROM invoices \nWHERE invoices.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:33,935 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at 
+FROM clients 
+WHERE clients.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:33,938 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 21.23s ago] (2, 100, 0)
+2026-01-05 22:03:33,940 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A535B0>)
+2026-01-05 22:03:33,940 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A535B0>) completed
+2026-01-05 22:03:33,940 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C193C0>)
+2026-01-05 22:03:33,940 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C193C0>) completed
+2026-01-05 22:03:33,941 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A928C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:33,941 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C193C0>)
+2026-01-05 22:03:33,942 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C193C0>) completed
+2026-01-05 22:03:33,944 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A928C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:33,944 - uvicorn.access - INFO - send:476 - 127.0.0.1:54722 - "GET /api/invoices/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:33,947 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:33,948 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0F790>)
+2026-01-05 22:03:33,949 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0F790>) completed
+2026-01-05 22:03:33,949 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A928C0>)
+2026-01-05 22:03:33,949 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A928C0>) completed
+2026-01-05 22:03:33,950 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0F790>)
+2026-01-05 22:03:33,950 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0F790>) completed
+2026-01-05 22:03:33,951 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A928C0>)
+2026-01-05 22:03:33,951 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A928C0>) completed
+2026-01-05 22:03:33,953 - uvicorn.access - INFO - send:476 - 127.0.0.1:54718 - "GET /api/clients/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:33,954 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:33,955 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A535B0>)
+2026-01-05 22:03:33,956 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A535B0>) completed
+2026-01-05 22:03:33,956 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A535B0>)
+2026-01-05 22:03:33,956 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A535B0>) completed
+2026-01-05 22:03:43,994 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:43,995 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:43,996 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 39.96s ago] (2,)
+2026-01-05 22:03:43,997 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:43,997 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:43,998 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C1AF40>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:43,998 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C1AF40>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:43,998 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C1AF40>)
+2026-01-05 22:03:43,998 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C1AF40>) completed
+2026-01-05 22:03:43,998 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C1AF40>)
+2026-01-05 22:03:43,999 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C1AF40>) completed
+2026-01-05 22:03:44,000 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at 
+FROM clients 
+WHERE clients.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:44,003 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 31.29s ago] (2, 100, 0)
+2026-01-05 22:03:44,004 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:44,004 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:44,004 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A39740>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:44,006 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1A39740>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:44,007 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A39740>)
+2026-01-05 22:03:44,007 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1A39740>) completed
+2026-01-05 22:03:44,008 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A39740>)
+2026-01-05 22:03:44,008 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1A39740>) completed
+2026-01-05 22:03:44,009 - uvicorn.access - INFO - send:476 - 127.0.0.1:54726 - "GET /api/clients/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:44,010 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:44,011 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:44,011 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:44,012 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>)
+2026-01-05 22:03:44,012 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1C0CC70>) completed
+2026-01-05 22:03:44,015 - sqlalchemy.engine.Engine - INFO - _connection_begin_impl:2702 - BEGIN (implicit)
+2026-01-05 22:03:44,017 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2026-01-05 22:03:44,019 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 39.99s ago] (2,)
+2026-01-05 22:03:44,020 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:44,020 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:44,021 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C1A740>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,))
+2026-01-05 22:03:44,021 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C1A740>, 'SELECT users.id, users.email, users.username, users.hashed_password, users.full_name, users.is_active, users.is_superuser, users.created_at, users.updated_at \nFROM users \nWHERE users.id = ?', (2,)) completed
+2026-01-05 22:03:44,023 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C1A740>)
+2026-01-05 22:03:44,023 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C1A740>) completed
+2026-01-05 22:03:44,024 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C1A740>)
+2026-01-05 22:03:44,024 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C1A740>) completed
+2026-01-05 22:03:44,026 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at 
+FROM clients 
+WHERE clients.user_id = ?
+ LIMIT ? OFFSET ?
+2026-01-05 22:03:44,033 - sqlalchemy.engine.Engine - INFO - _execute_context:1846 - [cached since 31.32s ago] (2, 100, 0)
+2026-01-05 22:03:44,034 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:44,034 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:44,035 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C198C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0))
+2026-01-05 22:03:44,035 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000012EE1C198C0>, 'SELECT clients.id, clients.user_id, clients.name, clients.email, clients.phone, clients.address, clients.city, clients.state, clients.postal_code, clients.country, clients.tax_id, clients.notes, clients.is_active, clients.created_at, clients.updated_at \nFROM clients \nWHERE clients.user_id = ?\n LIMIT ? OFFSET ?', (2, 100, 0)) completed
+2026-01-05 22:03:44,036 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C198C0>)
+2026-01-05 22:03:44,036 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000012EE1C198C0>) completed
+2026-01-05 22:03:44,036 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C198C0>)
+2026-01-05 22:03:44,036 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000012EE1C198C0>) completed
+2026-01-05 22:03:44,037 - uvicorn.access - INFO - send:476 - 127.0.0.1:54726 - "GET /api/clients/?skip=0&limit=100 HTTP/1.1" 200
+2026-01-05 22:03:44,037 - sqlalchemy.engine.Engine - INFO - _connection_rollback_impl:2705 - ROLLBACK
+2026-01-05 22:03:44,042 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:44,042 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
+2026-01-05 22:03:44,042 - aiosqlite - DEBUG - run:104 - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>)
+2026-01-05 22:03:44,043 - aiosqlite - DEBUG - run:106 - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000012EE1A50A90>) completed
