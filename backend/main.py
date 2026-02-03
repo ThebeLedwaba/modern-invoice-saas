@@ -4,6 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from database import init_db
 from api import auth_router, users_router, clients_router, invoices_router, payments_router
+from api.websocket import router as websocket_router
+from middleware.rate_limit import SecurityHeadersMiddleware
 from core.config import settings
 from core.logging import get_logger
 
@@ -36,12 +38,16 @@ app.add_middleware(
     allow_headers=settings.CORS_HEADERS,
 )
 
+# Add security headers middleware
+app.add_middleware(SecurityHeadersMiddleware)
+
 # Include routers
 app.include_router(auth_router, prefix="/api")
 app.include_router(users_router, prefix="/api")
 app.include_router(clients_router, prefix="/api")
 app.include_router(invoices_router, prefix="/api")
 app.include_router(payments_router, prefix="/api")
+app.include_router(websocket_router, tags=["websocket"])
 
 @app.get("/")
 def read_root():

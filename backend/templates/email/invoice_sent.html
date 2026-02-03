@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Invoice</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .container {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        .content {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #667eea;
+            margin-top: 0;
+        }
+
+        .invoice-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #764ba2;
+            margin: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Your Invoice is Ready</h1>
+
+            <p>Hello,</p>
+
+            <p>Your invoice <strong class="invoice-number">{{ invoice_number }}</strong> is attached to this email.</p>
+
+            <p>Please review the invoice and process payment by the due date indicated.</p>
+
+            <p>If you have any questions about this invoice, please don't hesitate to contact us.</p>
+
+            <p>Thank you for your business!</p>
+
+            <div class="footer">
+                <p>This is an automated email. Please do not reply directly to this message.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

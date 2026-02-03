@@ -65,27 +65,40 @@ Perfect for freelancers, agencies, and businesses who want professional, beautif
    ```bash
    git clone https://github.com/yourusername/invoicing-saas.git
    cd invoicing-saas
+   ```
 
-Start infrastructure (PostgreSQL + Redis)Bashdocker compose up -d
-docker compose ps          # verify services are healthy
-Backend setupBashcd backend
-python -m venv .venv
-# Windows:    .venv\Scripts\activate
-# Linux/Mac:  source .venv/bin/activate
+2. **Start infrastructure (PostgreSQL + Redis)**
+   ```bash
+   docker compose up -d
+   docker compose ps          # verify services are healthy
+   ```
 
-pip install -r requirements.txt
-cp .env.example .env       # edit with your secrets!
-alembic upgrade head
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
-Frontend setupBashcd ../frontend
-pnpm install               # or npm/yarn
-cp .env.example .env.local # edit VITE_API_URL etc.
-pnpm dev                   # or npm run dev
-Access the app
-Frontend → http://localhost:5173
-API → http://localhost:8000
-Swagger Docs → http://localhost:8000/docs
-Admin (if enabled) → http://localhost:8000/admin
+3. **Backend setup**
+   ```bash
+   cd backend
+   python -m venv .venv
+   # Windows:    .venv\Scripts\activate
+   # Linux/Mac:  source .venv/bin/activate
+
+   pip install -r requirements.txt
+   cp .env.example .env       # edit with your secrets!
+   alembic upgrade head
+   uvicorn main:app --reload --host 0.0.0.0 --port 8000
+   ```
+
+4. **Frontend setup**
+   ```bash
+   cd ../frontend
+   npm install                # or pnpm/yarn
+   cp .env.example .env.local # edit VITE_API_URL etc.
+   npm run dev                # or pnpm dev
+   ```
+
+5. **Access the app**
+   - Frontend → http://localhost:5173
+   - API → http://localhost:8000
+   - Swagger Docs → http://localhost:8000/docs
+   - Admin (if enabled) → http://localhost:8000/admin
 
 
 ⚙️ Configuration
