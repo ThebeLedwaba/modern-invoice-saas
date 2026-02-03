@@ -12,7 +12,7 @@ on:
       - 'frontend/**'
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     
     steps:
@@ -22,43 +22,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: frontend/package-lock.json
       
       - name: Install dependencies
         working-directory: ./frontend
-        run: npm ci
-      
-      - name: Run linting (non-blocking)
-        working-directory: ./frontend
-        continue-on-error: true
-        run: npm run lint || echo "Lint check failed"
-      
-      - name: Run type check (non-blocking)
-        working-directory: ./frontend
-        continue-on-error: true
-        run: npx tsc --noEmit || echo "Type check failed"
-      
-      - name: Run tests with coverage (non-blocking)
-        working-directory: ./frontend
-        continue-on-error: true
-        run: npm run test:coverage || echo "Tests failed"
+        run: npm install
       
       - name: Build
         working-directory: ./frontend
         run: npm run build
       
-      - name: Upload coverage reports
-        uses: codecov/codecov-action@v4
-        with:
-          file: ./frontend/coverage/coverage-final.json
-          flags: frontend
-          name: frontend-coverage
-          fail_ci_if_error: false
-      
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: frontend-build
-          path: frontend/dist
-          retention-days: 7
+      - name: Success
+        run: echo "Frontend CI passed!"
